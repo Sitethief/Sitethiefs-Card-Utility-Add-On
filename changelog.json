@@ -1,0 +1,23 @@
+[{
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "build": 1
+  },
+  "title": "Beta",
+  "date": "2022-08-04",
+  "logs": {
+    "features": [],
+    "fixes": [],
+    "changes": [{
+      "message": "First build with a working feature.",
+      "contributor": "Sitethief"
+    },
+      {
+        "message": "First build with a working config.",
+        "contributor": "Sitethief"
+      }
+    ],
+    "removed": []
+  }
+}]

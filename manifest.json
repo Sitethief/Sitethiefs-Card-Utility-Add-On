@@ -1,0 +1,42 @@
+{
+
+  "manifest_version": 2,
+  "name": "Sitethiefs Card Utility Add-On (SCUA)",
+  "version": "0.0.1",
+  "permissions": [
+    "storage"
+  ],
+  "description": "Adds several card utilities for Nationstates",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "background": {
+    "scripts": [
+      "vendor/bootstrap/js/bootstrap.bundle.min.js",
+      "utils.js"
+    ]
+  },
+
+  "options_ui": {
+    "page": "pages/settings/settings.html",
+    "open_in_tab": true
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*.nationstates.net/*"],
+    "js": [
+      "init.js",
+      "scripts/quick_menu.js"
+    ],
+    "run_at": "document_start"
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sitethief@gmail.com",
+      "strict_min_version": "42.0"
+    }
+  }
+
+
+}
