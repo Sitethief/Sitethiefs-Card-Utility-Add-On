@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css" />
+
+    <title>SCUA Settings</title>
+</head>
+<body>
+
+  <main class="container" id="preferences">
+    <h1> SCUA Settings </h1>
+
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <div class="row">
+                        <div class="col-xs-12"><h3> General </h3></div>
+                    </div>
+
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="global_main_nation" class="col-form-label">Main nation</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="global_main_nation" class="form-control" aria-describedby="global_main_nation">
+                        </div>
+                        <div class="col-auto">
+                            <span id="global_main_nation_help" class="form-text">
+                                Must be a valid existing main nation you use, this is used for API identification.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="global_container_style" class="col-form-label">Container style</label>
+                        </div>
+                        <div class="col-auto">
+                            <select class="form-control form-control-sm" id="global_container_style">
+                                <option id="global_container_style_container" value="container">Container</option>
+                                <option id="global_container_style_nation" value="nation">Nation</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <span id="global_container_style_help" class="form-text">
+                                What container style do you use?
+                            </span>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3> Card info </h3>
+                </section>
+
+                <section>
+                    <h3> API</h3>
+                </section>
+
+                <section>
+                    <h3> Puppet management </h3>
+                </section>
+
+                <section>
+                    <h3> Card Collections </h3>
+                </section>
+
+                <section>
+                    <h3> Keybinds </h3>
+                </section>
+
+                <section>
+                    <h3> Layout </h3>
+                </section>
+
+                <section>
+
+                    <div class="row">
+                        <div class="col-xs-12"><h3> Quickmenu </h3></div>
+                    </div>
+
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="quick_menu_nation_deck" class="col-form-label">Nation Card Deck Quick Menu</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" id="quick_menu_nation_deck" class="form-check-input" aria-describedby="quick_menu_nation_deck">
+                        </div>
+                        <div class="col-auto">
+                                <span id="quick_menu_nation_deck_help" class="form-text">
+                                    Enables link after nation names to card decks
+                                </span>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="quick_menu_nation_container_switch" class="col-form-label">Nation Container Switch Link</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" id="quick_menu_nation_container_switch" class="form-check-input" aria-describedby="quick_menu_nation_deck">
+                        </div>
+                        <div class="col-auto">
+                                <span id="quick_menu_nation_container_switch_help" class="form-text">
+                                    Enables link after nation names to switch to that container
+                                </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="saveSettingsBar" class="tt-hidden">
+                    <div>
+<!--                        <span>You have unsaved changes.</span>-->
+<!--                        <button id="revertSettings" class="fancy-button negative">Revert</button>-->
+                        <button id="saveSettings" class="fancy-button positive">Save</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+  </main>
+
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js" ></script>
+  <script src="settings.js" ></script>
+</body>
+</html>
